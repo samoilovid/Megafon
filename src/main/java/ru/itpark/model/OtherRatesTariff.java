@@ -1,10 +1,10 @@
 package ru.itpark.model;
 
-public class OtherRates extends Tariff {
+public class OtherRatesTariff extends Tariff {
     private String callMegaFonNumbers;
     private String otherCall;
 
-    public OtherRates(String id, String name, int minutes, String internet, int price, String callMegaFonNumbers, String otherCall) {
+    public OtherRatesTariff(String id, String name, int minutes, String internet, int price, String callMegaFonNumbers, String otherCall) {
         super(id, name, minutes, internet, price);
         this.callMegaFonNumbers = callMegaFonNumbers;
         this.otherCall = otherCall;

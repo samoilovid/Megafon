@@ -1,9 +1,9 @@
 package ru.itpark.model;
 
-public class ModemUsers extends Tariff {
+public class ModemUsersTariff extends Tariff {
     private int months;
 
-    public ModemUsers(String id, String name, int minutes, String internet, int price, int months) {
+    public ModemUsersTariff(String id, String name, int minutes, String internet, int price, int months) {
         super(id, name, minutes, internet, price);
         this.months = months;
     }

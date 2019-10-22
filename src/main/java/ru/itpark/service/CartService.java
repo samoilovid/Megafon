@@ -1,9 +1,9 @@
 package ru.itpark.service;
 
-import ru.itpark.model.ModemUsers;
-import ru.itpark.model.OtherRates;
+import ru.itpark.model.ModemUsersTariff;
+import ru.itpark.model.OtherRatesTariff;
 import ru.itpark.model.Tariff;
-import ru.itpark.model.TurnOn;
+import ru.itpark.model.TurnOnTariff;
 
 public class CartService {
         private Tariff[] tariffs = new Tariff[10];
@@ -11,14 +11,14 @@ public class CartService {
 
         public void add(Tariff tariff){
             tariffs[size++] = tariff;
-            if (tariff instanceof TurnOn) {
-                TurnOn turnOn = (TurnOn) tariff;
+            if (tariff instanceof TurnOnTariff) {
+                TurnOnTariff turnOnTariff = (TurnOnTariff) tariff;
             }
-            if (tariff instanceof ModemUsers) {
-                ModemUsers modemUsers = (ModemUsers) tariff;
+            if (tariff instanceof ModemUsersTariff) {
+                ModemUsersTariff modemUsersTariff = (ModemUsersTariff) tariff;
             }
-            if (tariff instanceof OtherRates) {
-                OtherRates otherRates = (OtherRates) tariff;
+            if (tariff instanceof OtherRatesTariff) {
+                OtherRatesTariff otherRatesTariff = (OtherRatesTariff) tariff;
             }
         }
     public void print(){
